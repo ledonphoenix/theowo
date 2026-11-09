@@ -155,6 +155,46 @@ html[dir=rtl] .uae-legend{align-items:flex-start!important;text-align:left!impor
 html[dir=rtl] #neural-cap{right:auto!important;left:clamp(20px,4vw,40px)}
 html[dir=rtl] .coords[style*="left:clamp"]{left:auto!important;right:clamp(20px,4vw,40px)}
 @media (max-width:700px){nav[aria-label=Main] .navlink,nav[aria-label=Main] .btn-outline-gold{display:none}.lang button{padding:7px 6px;min-width:28px}.dxbclock{font-size:11px}nav[aria-label=Main]{gap:14px!important}}
+/* ---- mobile refinements ---- */
+html,body{overflow-x:hidden}
+.view{overflow-x:clip}
+#dx-hero{overflow:hidden}
+#vb{color:var(--body)!important}
+.film-play{width:124px;height:124px;margin:-62px 0 0 -62px}
+@media (max-width:700px){
+  .kicker{letter-spacing:.2em!important;font-size:12px}
+  .sec{padding-top:72px;padding-bottom:72px}
+  .promo-dot{display:none!important}
+  .promo{font-size:11px!important;padding:10px 16px!important;gap:6px!important;line-height:1.5}
+  #neural-cap{display:none!important}
+  #hero .wrap{padding-top:28px!important;padding-bottom:90px!important}
+  #tower button.floor{font-size:14px}
+  #tower button.floor:nth-of-type(1){width:76%!important}
+  #tower button.floor:nth-of-type(2){width:80.8%!important}
+  #tower button.floor:nth-of-type(3){width:85.6%!important}
+  #tower button.floor:nth-of-type(4){width:90.4%!important}
+  #tower button.floor:nth-of-type(5){width:95.2%!important}
+  #tower button.floor:nth-of-type(6){width:100%!important}
+  #method .row>div,#index .wrap>div:last-child{padding:30px 24px!important}
+  #p-num{font-size:84px!important}
+  #contact-form{grid-template-columns:1fr!important}
+  #contact-form>*{grid-column:1/-1!important}
+  .film-play{width:76px!important;height:76px!important;margin:-38px 0 0 -38px!important}
+  .film-play svg{width:24px;height:24px}
+  .film-title{font-size:22px!important;left:20px!important;bottom:18px!important}
+  .sticky-apply{left:16px!important;right:16px!important;bottom:calc(14px + env(safe-area-inset-bottom,0px))!important;justify-content:center;padding:16px!important;font-size:14px!important}
+  .clockbox{min-width:0!important;flex:1 1 40%;padding:16px 10px!important}
+  .clockbox b{font-size:38px!important}
+  .tl{padding:22px!important}
+  .tl-st{padding:20px!important}
+  .seat{min-height:28px;font-size:10px;border-radius:8px}
+  #seats{gap:5px!important}
+  .faq summary{padding:22px 2px}
+  .dxbclock{font-size:11px}
+  footer .wrap,footer.wrap{gap:16px!important}
+  .xmark{display:none!important}
+  #seat-neurons{width:90vw!important}
+}
 .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,200%);opacity:0;visibility:hidden;background:var(--gold);color:var(--ink);padding:16px 26px;border-radius:999px;font-weight:600;transition:transform .4s;z-index:50}
 .toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
 .sticky-apply{position:fixed;right:24px;bottom:24px;z-index:40;opacity:0;pointer-events:none;transition:opacity .4s}
@@ -170,8 +210,8 @@ html[dir=rtl] .coords[style*="left:clamp"]{left:auto!important;right:clamp(20px,
 <!-- =================== HOME =================== -->
 <main id="view-home" class="view" aria-label="Home">
 
-<a data-goto="dxb100" href="#dxb100" style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:12px 20px;background:var(--gold);color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-align:center">
-<span class="dot ink"></span><span>Now open · DUBAI-it × 100 DXB Owners × 30 Days</span><span style="border-bottom:1px solid var(--ink)">Claim your sit-down →</span>
+<a class="promo" data-goto="dxb100" href="#dxb100" style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:12px 20px;background:var(--gold);color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-align:center">
+<span class="dot ink promo-dot"></span><span>Now open · DUBAI-it × 100 DXB Owners × 30 Days</span><span style="border-bottom:1px solid var(--ink)">Claim your sit-down →</span>
 </a>
 
 <header class="wrap" style="padding-top:28px;padding-bottom:28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
@@ -422,7 +462,7 @@ html[dir=rtl] .coords[style*="left:clamp"]{left:auto!important;right:clamp(20px,
 <p class="kicker reveal" style="letter-spacing:.4em">A 30-day campaign by OWO · High-performance business advisor</p>
 <h1 class="reveal" style="margin:0;display:flex;flex-direction:column;align-items:center">
 <span class="wide" style="font-weight:900;font-size:clamp(60px,12.5vw,196px);line-height:.86;letter-spacing:-.03em">DUBAI-it</span>
-<span style="display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,28px);width:100%"><span class="serif gold" aria-hidden="true" style="font-style:italic;font-size:clamp(50px,10vw,160px);line-height:1">×</span><span class="sr">100</span><canvas id="seat-neurons" aria-hidden="true" style="width:min(72vw,800px);aspect-ratio:2.15/1;display:block;cursor:crosshair"></canvas></span>
+<span style="display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,28px);width:100%"><span class="serif gold xmark" aria-hidden="true" style="font-style:italic;font-size:clamp(50px,10vw,160px);line-height:1">×</span><span class="sr">100</span><canvas id="seat-neurons" aria-hidden="true" style="width:min(72vw,800px);aspect-ratio:2.15/1;display:block;cursor:crosshair"></canvas></span>
 <span class="serif" style="margin-top:14px;font-style:italic;font-size:clamp(28px,4vw,58px)">DXB Owners in 30 days</span>
 </h1>
 <p class="lead reveal" style="max-width:720px;font-size:clamp(18px,1.6vw,22px)">100 Dubai business owners. 30 days. One sit-down.<br><strong style="color:var(--ivory);font-weight:600">One move that takes your business to its next level.</strong></p>
@@ -521,8 +561,8 @@ html[dir=rtl] .coords[style*="left:clamp"]{left:auto!important;right:clamp(20px,
 </div>
 </div>
 <a href="https://vimeo.com/1242169039" target="_blank" rel="noopener" aria-label="Watch the film: Who is OWO (opens Vimeo)" class="ph" style="background:linear-gradient(0deg,rgba(10,10,11,.85),rgba(10,10,11,.25)),url(img/owo-lounge.jpg) center 30%/cover;position:relative;display:block;aspect-ratio:16/9;max-height:720px;border-radius:28px;text-decoration:none;padding:0">
-<span style="position:absolute;left:50%;top:50%;width:124px;height:124px;margin:-62px 0 0 -62px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;animation:pulse 2s infinite"><svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36"><path d="M12 8v20l16-10z" fill="#0A0A0B"/></svg></span>
-<span class="serif" style="position:absolute;left:34px;bottom:30px;font-style:italic;font-size:34px;color:var(--ivory);letter-spacing:0;text-transform:none">Who is OWO — the film</span>
+<span class="film-play" style="position:absolute;left:50%;top:50%;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;animation:pulse 2s infinite"><svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36"><path d="M12 8v20l16-10z" fill="#0A0A0B"/></svg></span>
+<span class="serif film-title" style="position:absolute;left:34px;bottom:30px;font-style:italic;font-size:34px;color:var(--ivory);letter-spacing:0;text-transform:none">Who is OWO — the film</span>
 </a>
 <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px">
 <figure class="pic" style="aspect-ratio:4/5"><img src="img/owo-dinner.jpg" alt="OWO at dinner with a client" loading="lazy" style="object-position:72% center"><figcaption>With a client</figcaption></figure>
@@ -1074,7 +1114,7 @@ var CONFIG = {
       var dt = Math.min(50, now - (last || now)); last = now;
       var st = stage(), A = targets[st.k], B = targets[Math.min(st.k + 1, targets.length - 1)], e = st.f, time = now / 1000;
       var heroFade = view === 'home' ? clamp(1 - window.scrollY / (H * .9), 0, 1) : 0;
-      var alpha = .5 + .5 * heroFade;
+      var alpha = .5 + (W < 760 ? .2 : .5) * heroFade;
       ctx.clearRect(0, 0, W, H);
       var wD = (names[st.k] === 'dubai' ? 1 - e : 0) + (names[st.k + 1] === 'dubai' ? e : 0), morphing = e > .02 && e < .98, D = (W < 760 ? 64 : 88) * (1 + st.k * .05) * (1 - .12 * wD), D2 = D * D; alpha = Math.max(alpha, .5 + .4 * wD);
       for (var i = 0; i < nodes.length; i++) {
