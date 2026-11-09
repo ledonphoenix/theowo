@@ -6,6 +6,10 @@
   "preview_urls": false,
   "routes": [
     {
+      "pattern": "owo.sourcing360.fashion",
+      "custom_domain": true
+    },
+    {
       "pattern": "theowo.sourcing360.fashion",
       "custom_domain": true
     }
