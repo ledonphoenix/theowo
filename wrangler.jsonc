@@ -1,0 +1,22 @@
+{
+  "name": "theowo",
+  "compatibility_date": "2026-10-01",
+  "main": "./src/index.js",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "theowo.sourcing360.fashion",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./public/",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "PREVIEW_SALT": "176407eeb83e99f15cc72ec407fc2200",
+    "PREVIEW_HASH": "3152b0e1b1600ceea88e7f79894d8e27cc4e6c8021ef46a364497f883b56697b"
+  }
+}
