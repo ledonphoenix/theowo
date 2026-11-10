@@ -20,7 +20,7 @@
     "run_worker_first": true
   },
   "vars": {
-    "PREVIEW_SALT": "176407eeb83e99f15cc72ec407fc2200",
-    "PREVIEW_HASH": "3152b0e1b1600ceea88e7f79894d8e27cc4e6c8021ef46a364497f883b56697b"
+    "PREVIEW_SALT": "7b04a1a9bd6eeba61d399e10047d20b9",
+    "PREVIEW_HASH": "a9ab983639f806f708db108f91d5192629b947f4b76808f90eb9505e142bbc8f"
   }
 }
